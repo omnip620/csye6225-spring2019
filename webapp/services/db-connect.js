@@ -10,24 +10,24 @@ const sequelize = new Sequelize("csye6225", "admin", "xxxxxx", {
 });
 
 // Checking connection status
-// sequelize
-//   .authenticate()
-//   .then(function(err) {
-//     if (err) {
-//       console.log("There is connection in ERROR");
-//     } else {
-//       // sequelize.query("delete from users").then(function(rows) {
-//       //   console.log(JSON.stringify(rows));
-//       // });
+sequelize
+  .authenticate()
+  .then(function(err) {
+    if (err) {
+      console.log("There is connection in ERROR");
+    } else {
+      // sequelize.query("delete from users").then(function(rows) {
+      //   console.log(JSON.stringify(rows));
+      // });
 
-//       sequelize.query("select * from users").then(function(rows) {
-//         console.log(JSON.stringify(rows));
-//       });
-//       console.log("Connection has been established successfully");
-//     }
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   });
+      sequelize.query("select * from users").then(function(rows) {
+        console.log(JSON.stringify(rows));
+      });
+      console.log("Connection has been established successfully");
+    }
+  })
+  .catch(err => {
+    console.log(err);
+  });
 
 module.exports = sequelize;
