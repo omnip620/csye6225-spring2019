@@ -74,7 +74,8 @@ Resources:
       Roles:
         - !Ref CodeDeployEC2ServiceRole
         - !Ref CodeDeployServiceRole
-    
+      Users:
+        - "circleci"
   CircleCIUploadPolicies:
     Type: AWS::IAM::ManagedPolicy
     Properties: 
