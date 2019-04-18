@@ -23,8 +23,10 @@ const reset = async ctx => {
   };
 
   const aws = new AWS.SNS({ apiVersion: "2010-03-31" });
-  const pub = await aws.publish(params).promise();
-  ctx.body = pub;
+  const pub1 = await aws.publish(params).promise();
+  const pub2 = await aws.publish(params).promise();
+
+  ctx.body = {pub1, pub2};
 };
 
 module.exports = reset;
