@@ -101,7 +101,7 @@ Resources:
       AutoScalingGroupName: WebServerAutoScalingGroup
       Cooldown: 60
       MaxSize: 10
-      MinSize: 3
+      MinSize: 1
       DesiredCapacity: 3
       HealthCheckType: EC2
       LaunchConfigurationName:

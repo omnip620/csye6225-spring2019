@@ -10,7 +10,7 @@ const attachment = require("./attachment");
 const basicAuth = require("./../filters/basic_auth");
 const noteService = require("./../services/note");
 
-const reset = require("./../services/reset");
+const reset = require("./../services/resetdemo");
 
 router.use(async (ctx, next) => {
   const start = Date.now();
@@ -33,7 +33,7 @@ router.get("/health", ctx => {
   ctx.body = { message: "healthy" };
 });
 
-router.post("/reset", reset);
+router.post("/resetdemo", reset);
 
 router.get("/", basicAuth, ctx => {
   logger.info(dayjs().format("HH:mm:ss MM/DD/YYYY"));
