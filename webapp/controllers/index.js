@@ -10,7 +10,7 @@ const attachment = require("./attachment");
 const basicAuth = require("./../filters/basic_auth");
 const noteService = require("./../services/note");
 
-const reset = require("./../services/resetdemo");
+const reset = require("./../services/reset");
 
 router.use(async (ctx, next) => {
   const start = Date.now();
