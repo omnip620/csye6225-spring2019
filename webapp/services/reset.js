@@ -26,7 +26,8 @@ const reset = async ctx => {
   const pub1 = await aws.publish(params).promise();
   const pub2 = await aws.publish(params).promise();
 
-  ctx.body = {pub1, pub2};
+  ctx.body = {pub1,pub2};
+
 };
 
 module.exports = reset;

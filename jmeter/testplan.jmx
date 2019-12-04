@@ -18,7 +18,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1000</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -33,15 +33,15 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
 	&quot;username&quot;:&quot;${uid}@husky.neu.edu&quot;,&#xd;
-	&quot;password&quot;:&quot;!P1990528an&quot;&#xd;
+	&quot;password&quot;:&quot;Raymix@11&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">54.88.197.225</stringProp>
+          <stringProp name="HTTPSampler.domain">csye6225-spring2019-wangshiyu3.me</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/user/register</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -171,7 +171,7 @@
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="user and pwd" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="filename">/Users/omnip/Programe/csye6225/dev/csye6225-spring2019/jmeter/accounts.csv</stringProp>
+          <stringProp name="filename">/Users/ray/Desktop/Courses/19spring/csye6225/dev/csye6225-spring2019/jmeter/accounts.csv</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -187,7 +187,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1000</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -208,7 +208,7 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">csye6225-spring2019-001493794.me</stringProp>
+          <stringProp name="HTTPSampler.domain">csye6225-spring2019-wangshiyu3.me</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -231,7 +231,7 @@
             </elementProp>
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Authorization</stringProp>
-              <stringProp name="Header.value">Basic ${__base64Encode(${uid}:!P1990528an)}</stringProp>
+              <stringProp name="Header.value">Basic ${__base64Encode(${uid}:Raymix@11)}</stringProp>
             </elementProp>
           </collectionProp>
         </HeaderManager>
@@ -239,7 +239,7 @@
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="user and pwd" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="filename">/Users/omnip/Programe/csye6225/dev/csye6225-spring2019/jmeter/accounts.csv</stringProp>
+          <stringProp name="filename">/Users/ray/Desktop/Courses/19spring/csye6225/dev/csye6225-spring2019/jmeter/accounts.csv</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
